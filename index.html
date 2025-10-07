@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KowisaShop – Produk UMKM</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Kowisa<span>Shop</span></h1>
+    <button id="cart-btn">
+      🛒 <span id="cart-count">0</span>
+    </button>
+  </header>
+
+  <section class="hero">
+    <h2>Dukung Produk UMKM Indonesia</h2>
+    <p>Temukan produk lokal terbaik untuk kebutuhanmu</p>
+  </section>
+
+  <section class="product-list">
+    <div class="product-card" data-name="Kopi Sambas" data-price="45000">
+      <img src="img/kopi-gayo.jpg" alt="Kopi Sambas" />
+      <h3>Kopi Sambas</h3>
+      <p>Rp45.000</p>
+      <button class="add-to-cart">Tambah ke Keranjang</button>
+    </div>
+
+    <div class="product-card" data-name="Madu Krinyo'an" data-price="55000">
+      <img src="img/madu-hutan.jpg" alt="Madu Krinyo'an" />
+      <h3>Madu Kriyokan</h3>
+      <p>Rp55.000</p>
+      <button class="add-to-cart">Tambah ke Keranjang</button>
+    </div>
+
+    <div class="product-card" data-name="Sambal Nek Uwan" data-price="30000">
+      <img src="img/sambal-roa.jpg" alt="Sambal Nek Uwan" />
+      <h3>Sambal Nek Uwan</h3>
+      <p>Rp30.000</p>
+      <button class="add-to-cart">Tambah ke Keranjang</button>
+    </div>
+
+    <div class="product-card" data-name="Kain Lunggi" data-price="150000">
+      <img src="img/batik-tulis.jpg" alt="Kain Lunggi" />
+      <h3>Kain Lunggi</h3>
+      <p>Rp150.000</p>
+      <button class="add-to-cart">Tambah ke Keranjang</button>
+    </div>
+
+    <div class="product-card" data-name="Amplang Pak Hatta" data-price="20000">
+      <img src="img/snack-umkm.jpg" alt="Amplang Pak Hatta" />
+      <h3>Amplang Pak Hatta</h3>
+      <p>Rp20.000</p>
+      <button class="add-to-cart">Tambah ke Keranjang</button>
+    </div>
+  </section>
+
+  <aside id="cart-panel" class="hidden">
+    <div class="cart-header">
+      <h2>Keranjang Belanja</h2>
+      <button id="close-cart">✕</button>
+    </div>
+    <div id="cart-items"></div>
+    <div class="cart-footer">
+      <h3>Total: Rp<span id="cart-total">0</span></h3>
+      <button id="checkout-btn">Checkout</button>
+    </div>
+  </aside>
+
+  <footer>
+    <p>© 2025 KowisaShop – Dukung UMKM Lokal</p>
+  </footer>
+</body>
+</html>
